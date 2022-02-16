@@ -10,15 +10,14 @@ footer a {
     color: #9B2226;
 }
 
-dl {
-    text-align: center;
+html * {
     font-family: 'Roboto', sans-serif; 
 }
+
 h1 {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: light;
-    
+    font-weight: 300; 
 }
 
 
