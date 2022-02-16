@@ -1,9 +1,13 @@
+/* color palette: https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226 */
 footer {
     text-align: center;
     padding: 3px;
-    background-color: #005F73;
+    background-color: #001219;
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+footer a {
+    color: #9B2226;
 }
 
 dl {
@@ -12,5 +16,43 @@ dl {
 }
 h1 {
     text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: light;
+    
+}
+
+
+nav a {
+    display: block;
+    padding: 8px;
+    background-color: #0A9396;
+}
+nav ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001219;
     font-family: 'Roboto', sans-serif;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #001219;
 }
