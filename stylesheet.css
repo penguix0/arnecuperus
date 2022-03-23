@@ -1,10 +1,16 @@
 /* color palette: https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226 */
+.text-container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 
 /* Footer */
 footer {
     text-align: center;
     background-color: #001219;
-    margin-top: 50px;
+    padding: 0px;
+    margin: 0px;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +24,6 @@ html * {
     padding-left: 5px;
     text-decoration-color: #001219;
 }
-
 .center {
     display: block;
     margin-left: auto;
@@ -31,13 +36,11 @@ h1 {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-
 /* H2 */
 h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     padding-left: 5px;
 }
-
 dl li subtitle {
     font-weight: normal;
     padding-left: 5px;
