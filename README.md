@@ -11,4 +11,4 @@ De website heb ik zelf geschreven, dit heb ik gedaan met behulp van HTML en CSS.
 Ook heb ik gebruik gemaakt van Bootstrap, dit is een frontend toolkit waarmee je moeilijke taken zoals een navigatiebalk maken veel makkelijker en sneller kan maken.
 
 ## Hosting
-De website wordt gehost door github-pages, dit is een gratis service van GitHub.
+De website wordt gehost door [github-pages](https://pages.github.com), dit is een gratis service van GitHub.
