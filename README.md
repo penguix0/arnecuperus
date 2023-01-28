@@ -12,3 +12,6 @@ Ook heb ik gebruik gemaakt van Bootstrap, dit is een frontend toolkit waarmee je
 
 ## Hosting
 De website wordt gehost door [github-pages](https://pages.github.com), dit is een gratis service van GitHub.
+
+## Domein
+De website heeft de domeinnaam arnecuperus.nl deze domeinnaam huur ik bij [TransIP](https://www.transip.nl/).
