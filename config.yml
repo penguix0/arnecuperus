@@ -1,0 +1,91 @@
+baseURL: 'https://arnecuperus.nl/'
+languageCode: nl-nl
+title: Arne Cuperus
+theme: PaperMod
+
+enableRobotsTXT: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+
+defaultContentLanguage: nl
+languages:
+    nl:
+        languageName: "Nederlands"
+        contentDir: "content/nl"
+        languageCode: nl-nl
+        weight: 1
+        taxonomies: ## dunno what this is used for
+            category: categories
+            tag: tags
+        menu:
+            main:
+                # For Multilingual use search.<lang>.md ex. search.es.md.
+                - name: Zoeken
+                  url: search
+                  weight: 10
+                - name: Projecten
+                  url: projects
+                  weight: 10
+                - name: Over mij
+                  url: about
+                  weight: 10
+    en:
+        languageName: "English"
+        contentDir: "content/en"
+        languageCode: en-gb
+        weight: 2
+        taxonomies: ## dunno what this is used for
+            category: categories
+            tag: tags
+        disabled: true
+        defaultContentLanguageInSubdir: true
+        menu:
+            main:
+                # For Multilingual use search.<lang>.md ex. search.es.md.
+                - name: Search
+                  url: search
+                  weight: 10
+                - name: Projects
+                  url: projects
+                  weight: 10
+                - name: About
+                  url: about
+                  weight: 10
+
+params:
+    birth_year: 2006
+    ShowCodeCopyButtons: true
+    profileMode:
+        enabled: true
+        title: "Arne Cuperus" # optional default will be site title
+        imageUrl: "face.png" # optional
+        imageTitle: "An image of my face" # optional
+        imageWidth: 213 # custom size
+        imageHeight: 275 # custom size
+        # buttons:
+        #     - name: "Projects"
+        #       url: "/projects/"
+        #     - name: "Archive"
+        #       url: "/archive/"
+
+    socialIcons: # optional
+        - name: "github"
+          url: "https://github.com/penguix0"
+        - name: "discord"
+          url: "https://discordapp.com/users/432883281193598997"
+        - name: "linkedin"
+          url: "https://nl.linkedin.com/in/arne-cuperus-97896b254"
+        - name: "email"
+          url: "mail@arnecuperus.nl"
+    
+    # assets:
+    #     favicon: "<link / absolute url>"
+    #     favicon16x16:  "<link / absolute url>"
+    #     favicon32x32:  "<link / absolute url>"
+    #     apple_touch_icon:  "<link / absolute url>"
+    #     safari_pinned_tab:  "<link / absolute url>"
