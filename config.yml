@@ -1,4 +1,4 @@
-baseURL: 'https://arnecuperus.nl/'
+baseURL: 'http://arnecuperus.nl/'
 languageCode: nl-nl
 title: Arne Cuperus
 theme: "PaperMod"
@@ -10,8 +10,6 @@ outputs:
         - HTML
         - RSS
         - JSON # is necessary
-
-canonifyURLs: true
 
 defaultContentLanguage: nl
 languages:
