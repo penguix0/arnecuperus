@@ -1,7 +1,7 @@
 baseURL: 'https://arnecuperus.nl/'
 languageCode: nl-nl
 title: Arne Cuperus
-theme: PaperMod
+theme: "PaperMod"
 
 enableRobotsTXT: true
 
