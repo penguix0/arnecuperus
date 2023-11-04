@@ -11,6 +11,7 @@ outputs:
         - RSS
         - JSON # is necessary
 
+canonifyURLs: true
 
 defaultContentLanguage: nl
 languages:
