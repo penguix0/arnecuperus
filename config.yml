@@ -41,7 +41,7 @@ languages:
         taxonomies: ## dunno what this is used for
             category: categories
             tag: tags
-        disabled: true
+        disabled: false
         defaultContentLanguageInSubdir: true
         menu:
             main:

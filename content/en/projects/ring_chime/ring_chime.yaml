@@ -1,0 +1,64 @@
+blueprint:
+  name: Ring Chime Dual Sound
+  description: Configure Ring Chime to play distinct sounds for two doorbells.
+  domain: automation
+  input:
+    doorbell_ding:
+      name: Doorbell Sensor
+      description: The binary sensor entity for the doorbell ding.
+      selector:
+        entity:
+          domain: binary_sensor
+
+    chime_entity:
+      name: Ring Chime
+      description: The entity ID of the Ring Chime.
+      selector:
+        entity:
+          domain: siren
+
+    play_motion_sound:
+      name: Play Motion Sound
+      description: Check to play the "motion" sound; uncheck to play the "ding" sound. Configure the sounds in the Ring app.
+      default: true
+      selector:
+        boolean:
+
+    delay_seconds:
+      name: Delay Between Sounds
+      description: The delay in seconds between the chime sounds.
+      default: 5
+      selector:
+        number:
+          min: 0
+          max: 60
+          unit_of_measurement: seconds
+
+trigger:
+  platform: state
+  entity_id: !input doorbell_ding
+  from: "off"
+  to: "on"
+
+action:
+  - service: siren.turn_on
+    target:
+      entity_id: !input chime_entity
+    data:
+      tone: >
+        {% if play_motion_sound %}
+          motion
+        {% else %}
+          ding
+        {% endif %}
+
+  - condition: template
+    value_template: "{{ not play_motion_sound }}"
+    action:
+      - delay: "{{ delay_seconds }}"
+
+      - service: siren.turn_on
+        target:
+          entity_id: !input chime_entity
+        data:
+          tone: ding
