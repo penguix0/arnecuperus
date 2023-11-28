@@ -25,7 +25,7 @@ Firstly, ensure that your chime and doorbell are integrated into Home Assistant.
 > If the chime doesn't appear, ensure that you're logged in with your primary Ring account. Logging in with an account where the doorbell is shared does not work.
 
 Then add the blueprint:
-
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Farnecuperus.nl%2Fen%2Fprojects%2Fring_chime%2Fring_chime.yaml)
 
 Alternatively, you can create the following automation:
 ```yaml
