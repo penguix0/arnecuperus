@@ -63,7 +63,7 @@ params:
         enabled: true
         title: "Arne Cuperus" # optional default will be site title
         imageUrl: "face.png" # optional
-        imageTitle: "An image of my face" # optional
+        # imageTitle: "An image of my face" # optional
         imageWidth: 213 # custom size
         imageHeight: 275 # custom size
         # buttons:
@@ -82,9 +82,14 @@ params:
         - name: "email"
           url: "mail@arnecuperus.nl"
     
-    # assets:
-    #     favicon: "<link / absolute url>"
-    #     favicon16x16:  "<link / absolute url>"
-    #     favicon32x32:  "<link / absolute url>"
-    #     apple_touch_icon:  "<link / absolute url>"
-    #     safari_pinned_tab:  "<link / absolute url>"
+    assets:
+        favicon: "/favicons/favicon.ico"
+        favicon16x16:  "/favicons/favicon16x16.ico"
+        favicon32x32:  "/favicons/favicon32x32.ico"
+        apple_touch_icon:  "/favicons/favicon.ico"
+        safari_pinned_tab:  "/favicons/favicon.ico"
+
+sitemap:
+  changefreq: "weekly"
+  filename: "sitemap.xml"
+  priority: 0.5
