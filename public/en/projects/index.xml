@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Arne Cuperus</title>
+    <link>http://localhost:1313/en/projects/</link>
+    <description>Recent content in Projects on Arne Cuperus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 28 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing seperate sounds on the Ring Chime for two doorbells</title>
+      <link>http://localhost:1313/en/projects/ring_chime/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/projects/ring_chime/</guid>
+      <description>In this post I&amp;rsquo;ll explain how I configured Home Assistant to play two distinct sounds on the Ring Chime for each of my two doorbells.
+Requirements A Home Assistant server The official Ring Home Assistant integration Ring Chime This won´t work if you use motion alerts on your chime. Setup This project works in the following way: one doorbell is used as usual with the Ring app and linked to the chime, while the other doorbell is imported in Home Assistant along with the chime.</description>
+    </item>
+    
+  </channel>
+</rss>

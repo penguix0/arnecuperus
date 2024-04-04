@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="nl" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Algenreactor | Arne Cuperus</title>
+<meta name="keywords" content="">
+<meta name="description" content="Samen met Hylke Ietswaart en Thor Koning heb ik dit project in VWO 4 op Het Streek Lyceum uitgevoerd.
+Het probleem De wereldbevolking groeit, waardoor er meer voedsel en energie nodig is. Dit is een probleem, omdat er steeds meer afvalstoffen en fossiele brandstoffen worden gebruikt. Een oplossing is de biobased economy, waarin duurzame producten worden gemaakt van biologische grondstoffen. Algen kunnen een belangrijke rol spelen in de biobased economy.">
+<meta name="author" content="Arne Cuperus">
+<link rel="canonical" href="http://localhost:1313/projects/algenreactor/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://localhost:1313/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicons/favicon16x16.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicons/favicon32x32.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicons/favicon.ico">
+<link rel="mask-icon" href="http://localhost:1313/favicons/favicon.ico">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="nl" href="http://localhost:1313/projects/algenreactor/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Arne Cuperus (Alt + H)">Arne Cuperus</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/en/" title="English"
+                            aria-label="English">En</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about" title="Over mij">
+                    <span>Over mij</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects" title="Projecten">
+                    <span>Projecten</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Zoeken">
+                    <span>Zoeken</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Algenreactor
+    </h1>
+    <div class="post-meta"><span title='2022-02-19 00:00:00 +0000 UTC'>februari 19, 2022</span>&nbsp;·&nbsp;Arne Cuperus
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="lazy" src="http://localhost:1313/projects/algenreactor/P1010114.JPG" alt="Een foto van de algenreactor">
+        <p>De algenreactor</p>
+</figure>
+  <div class="post-content"><p>Samen met Hylke Ietswaart en Thor Koning heb ik dit project in VWO 4 op Het Streek Lyceum uitgevoerd.</p>
+<h1 id="het-probleem">Het probleem<a hidden class="anchor" aria-hidden="true" href="#het-probleem">#</a></h1>
+<p>De wereldbevolking groeit, waardoor er meer voedsel en energie nodig is. Dit is een probleem,
+omdat er steeds meer afvalstoffen en fossiele brandstoffen worden gebruikt. Een oplossing is de
+biobased economy, waarin duurzame producten worden gemaakt van biologische grondstoffen.
+Algen kunnen een belangrijke rol spelen in de biobased economy.</p>
+<h1 id="de-opdracht">De opdracht<a hidden class="anchor" aria-hidden="true" href="#de-opdracht">#</a></h1>
+<p>Onze opdrachtgever: het Wageningse AlgaePARC, gaf ons de opdracht om een duurzaam kweeksysteem voor algen te ontwerpen, bouwen en testen. Hierbij moesten we zelf een doel stellen zoals:</p>
+<ul>
+<li>Een zo hoog mogelijke concentratie algen kweken</li>
+<li>Zo goedkoop mogelijk algen kweken (euro’s per kg algen)</li>
+<li>Een zo hoog mogelijke concentratie van een algenproduct maken (zoals het pigment
+fycocyanine).</li>
+</ul>
+<p>Wij kozen ervoor om zo veel mogelijk concentratie algen te kweken binnen twee weken. Dit doel verwerkte we in ons plan van aanpak.</p>
+<h1 id="planning">Planning<a hidden class="anchor" aria-hidden="true" href="#planning">#</a></h1>
+<p>Vrijwel gelijk toen we de opdracht ontvingen van de opdrachtgever zijn we gaan plannen en kwam Hylke Ietswaart met het idee om een sponsor te zoeken, dit was gedurende eerste week dan ook onze topprioriteit.</p>
+<p>Na een week hadden we een sponsor gevonden en zijn we gaan plannen wat er komende periode gedaan moest worden.</p>
+<h1 id="sponsor">Sponsor<a hidden class="anchor" aria-hidden="true" href="#sponsor">#</a></h1>
+<p>De heer Eijkman, directeur bij Carbogen AMCIS, heeft ons project gesponsord. Hylke bracht ons in contact met hem, omdat hij contacten heeft bij het bedrijf. Carbogen AMCIS is zelf ook actief in de algensector, dus was het voor hen een mooie kans om ons te steunen.</p>
+<h1 id="uitvoering">Uitvoering<a hidden class="anchor" aria-hidden="true" href="#uitvoering">#</a></h1>
+<p>Nadat we een overzicht hadden van de taken, zijn we aan de slag gegaan. We begonnen met een vooronderzoek naar microalgen, hierin stelden we onszelf de volgende vragen:</p>
+<ul>
+<li>Wat zijn microalgen?</li>
+<li>Wat zijn essentiële groeifactoren voor algen?</li>
+<li>Wat is het verschil tussen microalgen en planten?</li>
+<li>Waar zijn toepassingen met microalgen tot nu toe al gebruikt?</li>
+</ul>
+<p>Op basis van ons vooronderzoek hebben we een schematische weergave van de reactor gemaakt. Deze weergave gaf ons een goed overzicht van de benodigde componenten. We hebben de componenten uitgezocht en een begroting gemaakt.
+<img loading="lazy" src="schents.jpg#center" alt="Schematische weergave van de algenreactor"  />
+</p>
+<p>Met de componenten in huis zijn we begonnen met de bouw van de reactor. We hebben dit gedaan in een werkplaats op het terrein van Carbogen AMCIS. Thor en Hylke waren verantwoordelijk voor de hardware, ik voor de software en bijbehorende elektronica</p>
+<h2 id="software">Software<a hidden class="anchor" aria-hidden="true" href="#software">#</a></h2>
+<p>De reactor was volledig autonoom. Hij regelde zelf de verlichting en temperatuur. De besturing werd verzorgd door een ESP8266-chip, die we op school vonden. Ik heb een besturingssysteem geschreven in Arduino (AlgaeOS) om de temperatuur via relais te regelen. Het verwarmingselement was op deze relais aangesloten. We gebruikten twee temperatuursensoren, een boven in het vat en een onder in het vat. De temperatuurdelta tussen deze twee sensoren werd gebruikt om het verwarmingselement aan of uit te zetten. We stelden de temperatuur in op 34 graden Celsius, wat de ideale temperatuur is voor algengroei.</p>
+<p>De ESP8266 zette een eigen wifi-hotspot op, zodat de slimme verlichting erop kon verbinden. De ESP8266 verbond zich ook met het wifi-netwerk van school om de temperatuurgegevens te loggen in een Google Spreadsheet. Zo konden we de reactor op afstand monitoren vanaf onze telefoon of tablet. De reactor gaf ook informatie over de status op de reactor zelf, via status-leds die informatie gaven over de internetverbinding, de temperatuur en het schrijven van gegevens naar de cloud.
+<img loading="lazy" src="P1010122.JPG#center" alt="Foto van elektronica"  />
+</p>
+<h2 id="medium">Medium<a hidden class="anchor" aria-hidden="true" href="#medium">#</a></h2>
+<p>Algen hebben voeding nodig om te groeien. In samenwerking met een hoogleraar van de HAN universiteit hebben we een recept ontwikkeld voor een bufferoplossing en voeding. Deze voeding zorgt voor een stabiel pH-niveau en bevordert de groei van de algen. We hebben de benodigde stoffen bij het scheikundekabinet van school gehaald.</p>
+<h1 id="eindproduct">Eindproduct<a hidden class="anchor" aria-hidden="true" href="#eindproduct">#</a></h1>
+<p>Dit is de uiteindelijke algenreactor, we hebben hiermee de competitie gewonnen en de mensen van het Wageningse AlgaePARC waren zeer enthousiast.</p>
+<p><img loading="lazy" src="P1010110.JPG#center" alt="Foto van de afgwerkte reactor"  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://localhost:1313/">Arne Cuperus</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'kopieer';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'gekopieerd!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'kopieer';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
